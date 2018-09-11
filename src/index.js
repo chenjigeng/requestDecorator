@@ -1,4 +1,4 @@
-const Request = require('./Request');
+const RequestDecorator = require('./RequestDecorator');
 const request = require('request');
 
 async function delay(num, time, cb) {
@@ -6,7 +6,7 @@ async function delay(num, time, cb) {
     cb(null, num);    
   }, time);
 }
-const requestInstance = new Request({
+const requestInstance = new RequestDecorator({
   maxLimit: 5,
   requestApi: delay,
   needChange2Promise: true,

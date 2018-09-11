@@ -1,6 +1,6 @@
 const pify = require('pify');
 
-class Request {
+class RequestDecorator {
   constructor ({
     maxLimit = 5,
     requestApi,
@@ -42,4 +42,4 @@ class Request {
   }
 }
 
-module.exports = Request;
+module.exports = RequestDecorator;
