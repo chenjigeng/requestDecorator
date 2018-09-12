@@ -1,8 +1,8 @@
 ## RequestDecorator
 
-这是一个允许你对你的request api做并发限制的一个小工具。
+这是一个允许你对你的request api做并发限制的一个小工具。
 
-使用样例：
+使用样例：
 
 ```javascript
 // 一个callback类型的请求api
